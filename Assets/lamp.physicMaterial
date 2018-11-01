@@ -6,8 +6,8 @@ PhysicMaterial:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: lamp
-  dynamicFriction: 0.6
-  staticFriction: 0.6
-  bounciness: 0
+  dynamicFriction: 10.8
+  staticFriction: 20.71
+  bounciness: 0.36
   frictionCombine: 0
   bounceCombine: 0

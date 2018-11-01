@@ -9,6 +9,7 @@ public class Lights : MonoBehaviour
 	void Start ()
     {
         light = GameObject.Find("Point Light");
+        light.SetActive(false);
 	}
 	
 	void Update ()
@@ -17,13 +18,20 @@ public class Lights : MonoBehaviour
 		
 	}
 
-    void OnTriggerEnter(Collider RightHandAnchor)
+    void OnTriggerEnter(Collider other)
     {
-        Instantiate(light);
+        if (other.CompareTag("Lamp"))
+        {
+            light.SetActive(true);
+        }
+        
     }
 
-    void OnTriggerLeave(Collider RightHandAnchor)
+    void OnTriggerExit(Collider other)
     {
-        Destroy(light);
+        if (other.CompareTag("Lamp"))
+        {
+            light.SetActive(false);
+        }
     }
 }

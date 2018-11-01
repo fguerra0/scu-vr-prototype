@@ -6,8 +6,8 @@ PhysicMaterial:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: pole
-  dynamicFriction: 0.6
+  dynamicFriction: 1
   staticFriction: 0.6
-  bounciness: 0
+  bounciness: 0.32
   frictionCombine: 0
   bounceCombine: 0
