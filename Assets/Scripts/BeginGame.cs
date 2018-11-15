@@ -8,7 +8,7 @@ public class BeginGame : MonoBehaviour {
     public Canvas menu;
     public GameObject playerController;
 
-    public void Start()
+    void OnEnable()
     {
         OVRPlayerController help = playerController.GetComponent<OVRPlayerController>();
         help.enabled = false;
