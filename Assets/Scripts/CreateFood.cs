@@ -10,12 +10,11 @@ public class CreateFood : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        print("entered");
+        // print("entered");
         if (other.gameObject.name == hand1.name || other.gameObject.name == hand2.name)
         {
-            print("has hands");
+           // print("has hands");
             Instantiate(food);
         }
     }
-    // other.gameObject.name.Contains("hand");other.gameObject.name == "hand_left" || other.gameObject.name == "hand_right")
 }
