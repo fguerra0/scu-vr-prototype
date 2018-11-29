@@ -14,7 +14,7 @@ public class CreateFood : MonoBehaviour
         if (other.gameObject.name == hand1.name || other.gameObject.name == hand2.name)
         {
            // print("has hands");
-            Instantiate(food);
+            Instantiate(food, transform.position+(transform.forward*2), transform.rotation);
         }
     }
 }

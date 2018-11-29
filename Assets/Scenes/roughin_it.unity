@@ -499,6 +499,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 11.183406
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 231f64d3e73b13f49916879c0d976a19, type: 3}
+      propertyPath: m_TagString
+      value: Food
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 231f64d3e73b13f49916879c0d976a19, type: 3}
   m_IsPrefabAsset: 0
@@ -2376,8 +2380,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 830667584}
-  m_LocalRotation: {x: -0.046896905, y: 0.9474876, z: 0.27021047, w: 0.16448197}
-  m_LocalPosition: {x: -26.679852, y: -25.36739, z: 36.946568}
+  m_LocalRotation: {x: 0.17088099, y: 0.10970689, z: 0.019147445, w: -0.9789778}
+  m_LocalPosition: {x: 108.31092, y: 11.088185, z: -31.703827}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4478,6 +4482,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 231f64d3e73b13f49916879c0d976a19,
     type: 3}
   m_PrefabInternal: {fileID: 60855229}
+--- !u!114 &1984558829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1984558828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec86b1373d217246b95dcc36bc3d874, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &1984558831
 SphereCollider:
   m_ObjectHideFlags: 0
