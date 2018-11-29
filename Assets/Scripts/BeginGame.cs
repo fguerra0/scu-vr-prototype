@@ -10,15 +10,15 @@ public class BeginGame : MonoBehaviour {
 
     void OnEnable()
     {
-        OVRPlayerController help = playerController.GetComponent<OVRPlayerController>();
-        help.enabled = false;
+        playerController = GameObject.Find("OVRPlayerController");
+        playerController.GetComponent<OVRPlayerController>().enabled = false;
     }
 
     public void gameStart()
     {
         menu.enabled = false;
-        OVRPlayerController ovrpc = playerController.GetComponent<OVRPlayerController>();
-        ovrpc.enabled = true;
+        playerController = GameObject.Find("OVRPlayerController");
+        playerController.GetComponent<OVRPlayerController>().enabled = true;
     }
 
 }
