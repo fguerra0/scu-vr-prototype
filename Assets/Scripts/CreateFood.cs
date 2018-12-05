@@ -10,10 +10,8 @@ public class CreateFood : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        // print("entered");
         if (other.gameObject.name == hand1.name || other.gameObject.name == hand2.name)
-        {
-           // print("has hands");
+        {      
             Instantiate(food, transform.position+(transform.forward*2), transform.rotation);
         }
     }
